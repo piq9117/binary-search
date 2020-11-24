@@ -1,4 +1,11 @@
-{-# LANGUAGE DeriveFunctor, FlexibleContexts, FlexibleInstances, MultiParamTypeClasses, MultiWayIf, RecordWildCards, ScopedTypeVariables, TupleSections #-}
+{-# LANGUAGE DeriveFunctor         #-}
+{-# LANGUAGE FlexibleContexts      #-}
+{-# LANGUAGE FlexibleInstances     #-}
+{-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE MultiWayIf            #-}
+{-# LANGUAGE RecordWildCards       #-}
+{-# LANGUAGE ScopedTypeVariables   #-}
+{-# LANGUAGE TupleSections         #-}
 
 -- | This package provides combinators to construct many variants of
 -- binary search.  Most generally, it provides the binary search over
@@ -85,15 +92,8 @@ module Numeric.Search where
 
 import           Control.Applicative
 import           Data.Functor.Identity
-import           Data.Maybe (fromJust, listToMaybe)
-import           Prelude hiding (init, pred)
-
--- $setup
--- All the doctests in this document assume:
---
--- >>> :set -XFlexibleContexts
--- >>> import Data.SBV
-
+import           Data.Maybe            (fromJust, listToMaybe)
+import           Prelude               hiding (init, pred)
 
 -- * Evidence
 
