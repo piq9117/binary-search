@@ -71,4 +71,4 @@ searchSafeRange p l h
   | p m = searchSafeRange p l m
   | otherwise = searchSafeRange p (m+1) h
   -- Stay within @min 0 l .. max 0 h@ to avoid overflow.
-  where m = l `div` 2 + h `div` 2	-- If l < h, then l <= m < h
+  where m = l `div` 2 + h `div` 2 -- If l < h, then l <= m < h
